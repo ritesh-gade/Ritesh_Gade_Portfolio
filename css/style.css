@@ -4,6 +4,31 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @keyframes blink {
+  0%, 50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.dot {
+  opacity: 0; /* Start with dots hidden */
+  animation: blink 1s linear infinite; /* Apply the blink animation */
+}
+
+.dot1 {
+  animation-delay: 0.2s; /* Delay the animation for the first dot by 0.2 seconds */
+}
+
+.dot2 {
+  animation-delay: 0.4s; /* Delay the animation for the second dot by 0.4 seconds */
+}
+
+.dot3 {
+  animation-delay: 0.6s; /* Delay the animation for the third dot by 0.6 seconds */
+}
+.certificate{
+  height: 22em	!important;
+}
+
 
 :root {
   --blue: #007bff;
